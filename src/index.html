@@ -7,6 +7,7 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="icon" href="/Images/Website Icon.png" type="">
     <script src="./script.js"></script>
+    
     <title>Company Website</title>
 </head>
 
@@ -283,7 +284,7 @@
         </aside>
     </main>
 
-    <!-- Pages last -->
+    <!--last Page -->
     <main class="h-[580px] bg-[#22252d] pt-14 px-12 flex gap-4">
 
         <div class="h-[380px] w-[280px]  ">
@@ -331,17 +332,18 @@
 
         </div>
 
-        <div class="h-[380px] w-[290px]  ">
+        <div class="h-[380px] w-[290px] ">
 
             <h1 class="text-xl font-medium text-gray-400">GET IN TOUCH</h1>
 
-            <form action="" class="mt-2 flex flex-col gap-y-4">
-                <input class="h-10 w-[290px] pl-2 rounded-md" type="text" placeholder="Name">
-                <input class="h-10 w-[290px] pl-2 rounded-md" type="email" placeholder="Email ID">
-                <input class="h-10 w-[290px] pl-2 rounded-md" type="number" placeholder="Mobile No">
-                <input class="h-10 w-[290px] pl-2 rounded-md" type="text" placeholder="Subject">
-                <input class="h-10 w-[290px] pl-2 rounded-md" type="text" placeholder="Your Message">
-                <button type="submit" class="h-8 w-20 text-white bg-blue-500 rounded-md"> SEND</button>
+            <form id="contact-form" class="mt-2 flex flex-col gap-y-4">
+                <input id="name" class="h-10 w-[290px] pl-2 rounded-md" type="text" placeholder="Name">
+                <input id="email" class="h-10 w-[290px] pl-2 rounded-md" type="email" placeholder="Email ID">
+                <input id="mobile" class="h-10 w-[290px] pl-2 rounded-md" type="number" placeholder="Mobile No">
+                <input id="subject" class="h-10 w-[290px] pl-2 rounded-md" type="text" placeholder="Subject">
+                <input id="message" class="h-10 w-[290px] pl-2 rounded-md" type="text" placeholder="Your Message">
+                <button onclick="validateForm()" type="submit" class="h-8 w-20 text-white bg-blue-500 rounded-md">
+                    SEND</button>
 
             </form>
 
